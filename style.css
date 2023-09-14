@@ -24,6 +24,7 @@ button:hover {
   /* all general fontsize and font- family information is here */
 .mainsize {
     font-size: 1.5rem;  
+    margin: 10px;
 }
 
 .bold {
@@ -109,7 +110,8 @@ min-width: 350px;
 
 .top button {
   background-color: #7abbb9;
-  width: 50%;
+  width: 30%;
+  margin: 10px;
 }
 
 /* Oriental section  */
