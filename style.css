@@ -1,0 +1,398 @@
+/* genereall styling which should apply to everything */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    z-index: 0;
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    /* flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start; */
+  }
+
+  /*all styling which is consistent among all buttons is collected here  */
+  button {
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.563rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.4em 1em;
+    color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  }
+
+  /* all general fontsize and font- family information is here */
+.mainsize {
+    font-size: 1.5rem;  
+}
+
+.bold {
+    font-weight: 900;
+}
+
+h2  {
+  text-align: left; 
+  font-size: 56px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* font-colors */
+  .turquois {
+    color: #7abbb9;
+}
+ .white {
+    color: white;
+ }
+
+h1, h2, h3, h4, p, a, li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navigation bar */
+.topnav {
+    background-color: #E69697;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    padding: 0px 18px;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+
+  .topnav h4 {
+    float: left;
+    margin: 1.5% 4%;
+    font-size: 1.1rem;
+}
+
+.topnavRight {
+    margin: 1.5% 4%;
+    text-decoration: none;
+    float: right;
+  }
+
+  .topnavRight a:hover {
+    background-color: #df4f51;
+    border-radius: 0.5rem;
+  }
+
+/* first section with hero image and order button  */
+.top{
+    background-image: url("./resources/Place_Your_Image_Her.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 100%;
+}
+
+.topflex{
+display: flex;
+flex-direction: column;
+padding: 5rem 2rem;
+width: 55%;
+min-width: 350px;
+}
+
+.top h1 {
+    font-size: 3.052rem;
+    margin-bottom: 2rem;
+    color: white;
+    
+}
+
+.top p{
+    color: white;
+  
+}
+
+.top button {
+  background-color: #7abbb9;
+  width: 50%;
+}
+
+/* Oriental section  */
+
+.oriental {
+    background-image: url(./resources/oriental.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 100vh;
+    display: flex;
+}
+
+.articleOriental {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    text-align: center;
+    max-width: 100rem;
+}
+
+.articleOriental img {
+    border-radius: 50%;
+    margin: 5rem;
+    width: 50%;
+    }
+
+
+/* .articleOriental h2, .statistics h2, .subscriptioncontainer h2  {
+    text-align: left; 
+    font-size: 56px;
+    margin: 10px 0;
+    font-weight: bold;
+} */
+
+.articleOriental p, .statistics p {
+    font-size: 24px;
+    text-align: left; 
+    font-weight: 50;
+    max-width: 500px;
+    min-width: 100px;
+    margin-bottom: 5%;
+}
+
+.articleOriental button {
+  background-color: #e78e92;
+}
+
+.special-menu1 {
+    background-image: url("./resources/266e6de5-711b-46b3-9b6f-280d27902f00.png");
+    display: flex;
+    padding: 40px;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4%;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item{
+    max-width: 25%;
+    min-width: 200px;
+    margin: 1rem;
+  } 
+
+  .special-menu1 h2 {
+    color: white;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .special-menu1 h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: white;
+  }
+
+  .special-menu1 p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  img {
+    width: 10rem;
+    border: 1px black;
+    border-radius: 50%;
+    height: 10rem;
+    
+  }
+
+/* flexbox layout for the whole section */
+
+.statistics {
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("./resources/CompositeLayer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15%;
+}
+
+.statistics  >p {
+    margin: 1rem;
+    min-width: 60%;
+    max-width: 70%;
+    text-align: center;
+}
+
+/* Flexbox layout for the three circles, so that they are a row */
+  .circle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* flexbox around the individual numbers for styling inside */
+
+.numbers { 
+    border: solid 2.5px #E4908E;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 50%;
+    font-size: 3.052rem;
+    height: 6em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin: 1rem;
+    text-align: center;
+} 
+
+
+
+/* Order Now area */
+
+.background {
+    background-image: url("./resources/sushiBackground.bmp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.orderContent {
+    max-width: 40%;
+    max-height: 60%;
+    padding-left: 4%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.orderContent h1 {
+    font-size: 3rem;
+}
+
+.orderButton {
+  background-color: #E69697;
+  min-width: 200px;
+}
+
+.orderContent a:hover {
+    background-color: #df4f51;
+  }
+
+  .flexWrap {
+    display: flex;
+    align-items: center;
+    gap:30%;
+    padding-left: 10%;
+  }
+
+  .flexWrap img{
+    width: 50%;
+    border-radius: 50%;
+  }
+
+/* styling for subscription flexbox */
+  .subscriptioncontainer{
+    background-color: #ffeb97;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15%;
+    background-image: url("./resources/subscripe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+
+  
+  .search-wrapper {
+    border-radius: 40px;
+    background-color: white;
+    margin: 10%;
+    display: flex;
+    align-items: baseline;
+    min-width: 60%;
+    max-width: 90%; 
+
+  }
+
+  .search-wrapper input{
+    border: none;
+    border-radius: 40px;
+    padding-left: 4%;
+    overflow: hidden;
+  }
+  
+  .search-wrapper button{
+    font-size: 0.8rem;
+    background-color: #21243D;
+    margin-left: auto;
+  }
+
+
+  /* genereall styling for the footer */
+
+.footerflex {
+    background-color: RGBA(119, 119, 119, 1);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 4rem;
+    flex-wrap: wrap;
+}
+
+ .details{
+    max-width: 30%;
+    min-width: 300px;
+} 
+
+.crosslinks {
+    max-width: 50%;
+    min-width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+footer h4{
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+footer ul{
+  margin: 0 3%;
+}
+
+footer li {
+    list-style: none;
+}
+
+.socialicons i{
+    margin: 0.5rem;
+}
+
+
+
+
+
+
