@@ -83,7 +83,7 @@ h1, h2, h3, h4, p, a, li {
     background-size:cover;
     background-repeat:no-repeat;
     width: 100%;
-}
+}  
 
 .topflex{
 display: flex;
@@ -108,7 +108,7 @@ min-width: 350px;
 .top button {
   background-color: #7abbb9;
   width: 50%;
-}
+} 
 
 /* Oriental section  */
 
