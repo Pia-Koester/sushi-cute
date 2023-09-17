@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
   /*all styling which is consistent among all buttons is collected here  */
   button {
     text-transform: uppercase;
@@ -23,7 +21,7 @@ button:hover {
 
   /* all general fontsize and font- family information is here */
 .mainsize {
-    font-size: 1.5rem;  
+    font-size: 1.25rem;  
 }
 
 .bold {
@@ -85,7 +83,7 @@ h1, h2, h3, h4, p, a, li {
     background-size:cover;
     background-repeat:no-repeat;
     width: 100%;
-}
+}  
 
 .topflex{
 display: flex;
@@ -110,7 +108,7 @@ min-width: 350px;
 .top button {
   background-color: #7abbb9;
   width: 50%;
-}
+} 
 
 /* Oriental section  */
 
@@ -334,7 +332,7 @@ min-width: 350px;
   }
   
   .search-wrapper button{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     background-color: #21243D;
     margin-left: auto;
   }
@@ -380,6 +378,7 @@ footer li {
 
 .socialicons i{
     margin: 0.5rem;
+    font-size: 2rem;
 }
 
 
